@@ -1,8 +1,7 @@
 import 'dart:html';
 import 'dart:math';
-import 'dart:async';
 
-import 'package:noise_algorithms/noise.dart';
+import 'package:noise_algorithms/noise_algorithms.dart';
 
 int width = 500;
 int height = 500;

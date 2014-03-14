@@ -1,6 +1,6 @@
 name: noise_algorithms
 description: Speed-improved perlin and simplex noise algorithms for 2D.
 version: 0.1.0
-author: Markus Ritberger
+author: Markus Ritberger <slemgrim@gmail.com>
 homepage: https://github.com/Slemgrim/noise_algorithms
 dependencies:

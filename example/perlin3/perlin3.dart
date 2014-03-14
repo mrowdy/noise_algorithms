@@ -1,11 +1,11 @@
 import 'dart:html';
 import 'dart:math';
-import 'dart:async';
 
-import 'package:noise_algorithms/noise.dart';
+import 'package:noise_algorithms/noise_algorithms.dart';
 
 int width = 500;
 int height = 500;
+double depth = 0.0;
 
 Element body = querySelector('body');
 CanvasElement canvas = new CanvasElement(width: width, height: height);
@@ -15,15 +15,23 @@ ImageData imgd = ctx.createImageData(width, height);
 List<int> data = imgd.data;
 
 Random rand = new Random();
-Perlin2 perlin = new Perlin2(rand.nextInt(100));
+Perlin3 perlin = new Perlin3(rand.nextInt(100));
 
 void main() {
+
+  window.animationFrame.then((_) => update());
+
+  body.append(canvas);
+
+}
+
+void update(){
 
   int start = new DateTime.now().millisecondsSinceEpoch;
 
   for (int x = 0; x < width; x++) {
     for (int y = 0; y < height; y++) {
-      double value = perlin.noise(x / 100, y / 100).abs();
+      double value = perlin.noise(x / 100, y / 100, depth).abs();
       value *= 256;
 
       int intvalue = value.toInt();
@@ -35,6 +43,8 @@ void main() {
     }
   }
 
+  depth += 0.05;
+
   int end = new DateTime.now().millisecondsSinceEpoch;
 
   ctx..putImageData(imgd, 20, 20)
@@ -44,5 +54,5 @@ void main() {
      ..fillText('Rendered in ${end - start} ms',
          canvas.width / 2, canvas.height - 20);
 
-  body.append(canvas);
+  window.animationFrame.then((_) => update());
 }
