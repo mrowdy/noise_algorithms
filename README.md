@@ -1,6 +1,6 @@
-#NOISE!
+#NOISE ALGORITHMS!
 
-A speed-improved perlin and simplex noise algorithms for 2D.
+Speed-improved perlin and simplex noise algorithms for 2D.
 
 Based on [noisejs](https://github.com/josephg/noisejs) by [josephg](https://github.com/josephg)
 
@@ -18,3 +18,10 @@ int y = 100;
 double noise = perlin.noise(x, y);
 
 ```
+
+## Examples
+
+[Perlin 2D](http://slemgrim.github.io/noise_algorithms/perlin2.html)
+[Perlin 3D](http://slemgrim.github.io/noise_algorithms/perlin3.html)
+[Simplex 2D](http://slemgrim.github.io/noise_algorithms/simplex2.html)
+[Simplex 3D](http://slemgrim.github.io/noise_algorithms/simplex3.html)
