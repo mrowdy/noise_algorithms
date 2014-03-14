@@ -1,0 +1,30 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
+
+#content {
+  width: 300px;
+  margin: auto;
+  text-algin: center;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
