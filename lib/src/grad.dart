@@ -1,4 +1,4 @@
-part of noise;
+part of noise_algorithms;
 
 class Grad {
   double x, y, z;

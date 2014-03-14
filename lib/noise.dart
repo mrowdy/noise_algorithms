@@ -15,7 +15,7 @@
  *
  */
 
-library noise;
+library noise_algorithms;
 
 import 'dart:math' show sqrt;
 

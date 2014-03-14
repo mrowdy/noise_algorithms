@@ -1,4 +1,4 @@
-part of noise;
+part of noise_algorithms;
 
 class Perlin2 extends ANoise {
 

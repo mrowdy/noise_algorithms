@@ -1,3 +1,3 @@
-name: noise
+name: noise_algorithms
 description: A speed-improved perlin and simplex noise algorithms for 2D.
 dependencies:
