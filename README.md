@@ -21,7 +21,7 @@ double noise = perlin.noise(x, y);
 
 ## Examples
 
-[Perlin 2D](http://slemgrim.github.io/noise_algorithms/perlin2.html)
-[Perlin 3D](http://slemgrim.github.io/noise_algorithms/perlin3.html)
-[Simplex 2D](http://slemgrim.github.io/noise_algorithms/simplex2.html)
-[Simplex 3D](http://slemgrim.github.io/noise_algorithms/simplex3.html)
+- [Perlin 2D](http://slemgrim.github.io/noise_algorithms/perlin2.html)
+- [Perlin 3D](http://slemgrim.github.io/noise_algorithms/perlin3.html)
+- [Simplex 2D](http://slemgrim.github.io/noise_algorithms/simplex2.html)
+- [Simplex 3D](http://slemgrim.github.io/noise_algorithms/simplex3.html)
